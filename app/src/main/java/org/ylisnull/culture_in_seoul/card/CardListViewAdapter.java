@@ -46,7 +46,7 @@ public class CardListViewAdapter extends RecyclerView.Adapter<CardViewHolder> {
 
         //Picasso가 대문자 URI에서 동작안함, 파일 확장자 대소문자 구분 필요
         main_img = main_img.substring(0, main_img.lastIndexOf(".")).toLowerCase() + main_img.substring(main_img.lastIndexOf("."));
-        Picasso.with(this.context).load(main_img).error(R.drawable.no_image).fit().centerInside().into(cardViewHolder.vMain_image);
+        Picasso.with(this.context).load(main_img).error(R.drawable.noimage).fit().centerInside().into(cardViewHolder.vMain_image);
 
     }
 

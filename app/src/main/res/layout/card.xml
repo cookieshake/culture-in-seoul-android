@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/card_image"
-                android:src="@drawable/no_image"
+                android:src="@drawable/noimage"
                 android:scaleType="centerInside" />
         </LinearLayout>
     </LinearLayout>
