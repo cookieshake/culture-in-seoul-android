@@ -9,6 +9,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -17,6 +19,7 @@ import com.viewpagerindicator.UnderlinePageIndicator;
 import org.ylisnull.culture_in_seoul.card.CardInflator;
 import org.ylisnull.culture_in_seoul.card.CardListViewAdapter;
 import org.ylisnull.culture_in_seoul.topmenu.TopMenuChangeListener;
+import org.ylisnull.culture_in_seoul.topmenu.TopMenuOnClickListener;
 import org.ylisnull.culture_in_seoul.topmenu.TopMenuPageAdapter;
 
 import java.util.ArrayList;
@@ -46,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         viewPager.setAdapter(new TopMenuPageAdapter(views));
         viewPager.addOnPageChangeListener(new TopMenuChangeListener(this));
+
+        //메뉴버튼 클릭리스너 생성 및 버튼에 연결
+        TopMenuOnClickListener tmocl = new TopMenuOnClickListener();
+        tmocl.setViewPagerToChange(viewPager);
+        ((ImageView) findViewById(R.id.menu0)).setOnClickListener(tmocl);
+        ((ImageView) findViewById(R.id.menu1)).setOnClickListener(tmocl);
+        ((ImageView) findViewById(R.id.menu2)).setOnClickListener(tmocl);
+        ((ImageView) findViewById(R.id.menu3)).setOnClickListener(tmocl);
 
         //메뉴 지시기 추가
         UnderlinePageIndicator pager_indicator = (UnderlinePageIndicator) findViewById(R.id.pager_indicator);
