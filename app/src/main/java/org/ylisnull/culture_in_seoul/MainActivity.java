@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         views.add(inflateNewsFeed());
         views.add(inflateLikes());
         views.add(inflateSearch());
-        views.add(inflateNewsFeed());
+        views.add(inflateSetting());
 
         //ViewPager 생성 및 Adapter와 Listener연결
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
@@ -82,5 +82,11 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout search = (LinearLayout) getLayoutInflater().from(this).inflate(R.layout.likes, null);
 
         return search;
+    }
+
+    private LinearLayout inflateSetting() {
+        LinearLayout setting = (LinearLayout) getLayoutInflater().from(this).inflate(R.layout.setting, null);
+
+        return setting;
     }
 }
