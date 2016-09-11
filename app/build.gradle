@@ -37,4 +37,7 @@ dependencies {
     compile 'com.pnikosis:materialish-progress:1.7'
     //회전 로딩바
 
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'
+    //gif이미지뷰
+
 }
