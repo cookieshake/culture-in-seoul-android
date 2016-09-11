@@ -8,6 +8,6 @@
     android:paddingLeft="4dp"
     android:paddingRight="4dp"
     android:paddingBottom="4dp"
-    android:background="#DDDDDD">
+    android:background="#283545">
 
 </android.support.v7.widget.RecyclerView>

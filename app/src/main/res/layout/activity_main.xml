@@ -30,7 +30,7 @@
                 android:id="@+id/menuText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="메뉴이름"
+                android:text="뉴스피드"
                 android:textColor="#ffffff"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
@@ -101,11 +101,6 @@
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:background="#2b2b2b"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#b2b2b2" />
 
         <!-- 내용이 표시되는 곳 -->
         <android.support.v4.view.ViewPager
