@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.viewpagerindicator.UnderlinePageIndicator;
@@ -45,23 +46,37 @@ public class MainActivity extends AppCompatActivity {
         views.add(inflateSearch());
         views.add(inflateSetting());
 
+        //Button들 지정
+        ImageView menu0 = (ImageView) ((ImageView) findViewById(R.id.menu0));
+        ImageView menu1 = (ImageView) ((ImageView) findViewById(R.id.menu1));
+        ImageView menu2 = (ImageView) ((ImageView) findViewById(R.id.menu2));
+        ImageView menu3 = (ImageView) ((ImageView) findViewById(R.id.menu3));
+
         //ViewPager 생성 및 Adapter와 Listener연결
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         viewPager.setAdapter(new TopMenuPageAdapter(views));
-        viewPager.addOnPageChangeListener(new TopMenuChangeListener(this));
+
+        TopMenuChangeListener tmcl = new TopMenuChangeListener(this);
+        ImageView[] buttonImages = {menu0, menu1, menu2, menu3};
+        TextView menuText = (TextView) findViewById(R.id.menuText);
+
+        tmcl.setButtonImages(buttonImages);
+        tmcl.setMenuTextIndicator(menuText);
+
+        viewPager.addOnPageChangeListener(tmcl);
 
         //메뉴버튼 클릭리스너 생성 및 버튼에 연결
         TopMenuOnClickListener tmocl = new TopMenuOnClickListener();
         tmocl.setViewPagerToChange(viewPager);
-        ((ImageView) findViewById(R.id.menu0)).setOnClickListener(tmocl);
-        ((ImageView) findViewById(R.id.menu1)).setOnClickListener(tmocl);
-        ((ImageView) findViewById(R.id.menu2)).setOnClickListener(tmocl);
-        ((ImageView) findViewById(R.id.menu3)).setOnClickListener(tmocl);
+        menu0.setOnClickListener(tmocl);
+        menu1.setOnClickListener(tmocl);
+        menu2.setOnClickListener(tmocl);
+        menu3.setOnClickListener(tmocl);
 
         //메뉴 지시기 추가
         UnderlinePageIndicator pager_indicator = (UnderlinePageIndicator) findViewById(R.id.pager_indicator);
         pager_indicator.setViewPager(viewPager);
-        pager_indicator.setSelectedColor(Color.parseColor("#232323"));
+        pager_indicator.setSelectedColor(Color.parseColor("#e14018"));
         pager_indicator.setFades(false);
 
 

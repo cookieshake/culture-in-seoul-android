@@ -21,37 +21,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="52dp"
+            android:paddingLeft="8dp"
             android:orientation="horizontal"
-            android:background="#59b3ff"
-            android:gravity="center">
+            android:background="#2b2b2b"
+            android:gravity="center_vertical">
 
             <TextView
+                android:id="@+id/menuText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="우리"
+                android:text="메뉴이름"
                 android:textColor="#ffffff"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="서울 "
-                android:textColor="#cc003d"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="문화"
-                android:textColor="#ffffff"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="대장"
-                android:textColor="#000000"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
         </LinearLayout>
 
@@ -60,7 +42,7 @@
             android:layout_width="match_parent"
             android:paddingTop="4dp"
             android:layout_height="40dp"
-            android:background="#efefef">
+            android:background="#2b2b2b">
 
             <ImageView
                 android:id="@+id/menu0"
@@ -82,7 +64,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/heart"/>
+                android:src="@drawable/mainmenu_heart_light"/>
 
             <View
                 android:layout_width="1dp"
@@ -118,7 +100,7 @@
             android:id="@+id/pager_indicator"
             android:layout_width="match_parent"
             android:layout_height="4dp"
-            android:background="#efefef"/>
+            android:background="#2b2b2b"/>
 
         <View
             android:layout_width="match_parent"
