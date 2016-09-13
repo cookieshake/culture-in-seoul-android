@@ -1,5 +1,6 @@
 package org.ylisnull.culture_in_seoul.card;
 
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import org.ylisnull.culture_in_seoul.R;
 
 public class CardViewHolder extends RecyclerView.ViewHolder {
+    protected CardView vCardView;
     protected LinearLayout vCardContent;
 
     protected TextView vTitle;
@@ -24,6 +26,7 @@ public class CardViewHolder extends RecyclerView.ViewHolder {
     public CardViewHolder(View v) {
         super(v);
 
+        vCardView = (CardView) v.findViewById(R.id.card_view);
         vCardContent = (LinearLayout) v.findViewById(R.id.card_content);
 
         vTitle = (TextView) v.findViewById(R.id.card_title);

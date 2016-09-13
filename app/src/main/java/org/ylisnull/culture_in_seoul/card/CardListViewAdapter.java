@@ -70,6 +70,7 @@ public class CardListViewAdapter extends RecyclerView.Adapter<CardViewHolder> {
 
             }
         });
+
     }
 
     @Override
