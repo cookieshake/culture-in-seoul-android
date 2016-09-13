@@ -99,13 +99,25 @@
             android:background="#2b2b2b"/>
 
         <!-- 내용이 표시되는 곳 -->
-        <android.support.v4.view.ViewPager
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/viewpager"
-            android:layout_weight="1">
+            android:layout_height="match_parent">
 
-        </android.support.v4.view.ViewPager>
+            <!-- 내용 부분 배경 -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/background"
+                android:scaleType="centerCrop"/>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewpager"
+                android:layout_weight="1">
+
+            </android.support.v4.view.ViewPager>
+        </FrameLayout>
     </LinearLayout>
 
 </LinearLayout>
