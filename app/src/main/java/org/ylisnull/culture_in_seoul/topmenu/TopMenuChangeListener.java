@@ -17,17 +17,17 @@ public class TopMenuChangeListener implements ViewPager.OnPageChangeListener {
     };
 
     int[] drawableIdsWhenSelected = {
-            R.drawable.mainmenu_newsfeed,
-            R.drawable.mainmenu_heart_selected,
-            R.drawable.mainmenu_find_selected,
-            R.drawable.mainmenu_setting_selected
+            R.drawable.menu_newsfeed_activated,
+            R.drawable.menu_heart_activated,
+            R.drawable.menu_find_activated,
+            R.drawable.menu_setting_activated
     };
 
     int[] drawableIdsWhenUnselected = {
-            R.drawable.mainmenu_newsfeed,
-            R.drawable.mainmenu_heart_light,
-            R.drawable.mainmenu_find_light,
-            R.drawable.mainmenu_setting_light
+            R.drawable.menu_newsfeed_deactivated,
+            R.drawable.menu_heart_deactivated,
+            R.drawable.menu_find_deactivated,
+            R.drawable.menu_setting_deactivated
     };
 
     public TopMenuChangeListener(Context context) {

@@ -49,46 +49,32 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/mainmenu_newsfeed"/>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="36dp"
-                android:background="#b2b2b2b2"
-                android:layout_gravity="center"/>
+                android:padding="4dp"
+                android:src="@drawable/menu_newsfeed_deactivated"/>
 
             <ImageView
                 android:id="@+id/menu1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/mainmenu_heart_light"/>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="36dp"
-                android:background="#b2b2b2b2"
-                android:layout_gravity="center" />
+                android:padding="4dp"
+                android:src="@drawable/menu_heart_deactivated"/>
 
             <ImageView
                 android:id="@+id/menu2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/mainmenu_find_light"/>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="36dp"
-                android:background="#b2b2b2b2"
-                android:layout_gravity="center" />
+                android:padding="4dp"
+                android:src="@drawable/menu_find_deactivated"/>
 
             <ImageView
                 android:id="@+id/menu3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/mainmenu_setting_light"/>
+                android:padding="4dp"
+                android:src="@drawable/menu_setting_deactivated"/>
 
         </LinearLayout>
 
