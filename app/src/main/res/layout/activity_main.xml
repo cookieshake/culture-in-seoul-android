@@ -49,7 +49,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="4dp"
+                android:padding="10dp"
                 android:src="@drawable/menu_newsfeed_deactivated"/>
 
             <ImageView
@@ -57,7 +57,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="4dp"
+                android:padding="10dp"
                 android:src="@drawable/menu_heart_deactivated"/>
 
             <ImageView
@@ -65,7 +65,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="4dp"
+                android:padding="10dp"
                 android:src="@drawable/menu_find_deactivated"/>
 
             <ImageView
@@ -73,7 +73,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:padding="4dp"
+                android:padding="10dp"
                 android:src="@drawable/menu_setting_deactivated"/>
 
         </LinearLayout>
