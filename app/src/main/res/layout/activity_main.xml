@@ -82,7 +82,7 @@
             android:id="@+id/pager_indicator"
             android:layout_width="match_parent"
             android:layout_height="4dp"
-            android:background="#2b2b2b"/>
+            android:background="#313131"/>
 
         <!-- 내용이 표시되는 곳 -->
         <FrameLayout
