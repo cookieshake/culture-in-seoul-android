@@ -61,12 +61,18 @@ public class CardListViewAdapter extends RecyclerView.Adapter<CardViewHolder> {
                 int visibility = cardViewHolder.vBottomMenuBackground.getVisibility();
                 if (visibility == View.GONE) {
                     cardViewHolder.vBottomMenuBackground.setVisibility(View.VISIBLE);
-
                     Animation slideDown = AnimationUtils.loadAnimation(context, R.anim.slide_down);
-
                     cardViewHolder.vBottomMenu.startAnimation(slideDown);
-                } else
-                    cardViewHolder.vBottomMenuBackground.setVisibility(View.GONE);
+                } else {
+                    Animation slideUp = AnimationUtils.loadAnimation(context, R.anim.slide_up);
+                    cardViewHolder.vBottomMenu.startAnimation(slideUp);
+                    cardViewHolder.vBottomMenuBackground.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            cardViewHolder.vBottomMenuBackground.setVisibility(View.GONE);
+                        }
+                    }, 200);
+                }
 
             }
         });

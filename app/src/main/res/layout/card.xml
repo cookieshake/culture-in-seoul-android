@@ -13,14 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#ffffff"
-        android:padding="17.5dp">
+        android:background="#ffffff">
 
         <!-- 카드 내용 및 사진 부분 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="17.5dp">
 
             <!-- 카드 내용 부분 -->
             <LinearLayout
@@ -101,8 +101,7 @@
             android:id="@+id/card_bottomMenuBackground"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:visibility="gone"
-            android:background="#283545">
+            android:visibility="gone">
 
             <LinearLayout
                 android:id="@+id/card_bottomMenu"
