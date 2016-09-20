@@ -6,21 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     card_view:cardCornerRadius="0dp"
-    android:layout_marginTop="12.5dp">
+    android:layout_marginTop="12.5dp"
+    android:background="@android:color/transparent">
 
     <!-- 카드 내용과 하단 메뉴 포함 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#ffffff">
+        android:background="@android:color/transparent">
 
         <!-- 카드 내용 및 사진 부분 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="17.5dp">
+            android:padding="17.5dp"
+            android:background="#ffffff">
 
             <!-- 카드 내용 부분 -->
             <LinearLayout
@@ -74,10 +76,6 @@
 
                 </LinearLayout>
 
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"></FrameLayout>
             </LinearLayout>
 
             <!-- 사진 부분 -->
@@ -101,13 +99,14 @@
             android:id="@+id/card_bottomMenuBackground"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:background="@android:color/transparent"
             android:visibility="gone">
 
             <LinearLayout
                 android:id="@+id/card_bottomMenu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
+                android:background="@android:color/transparent"
                 android:gravity="center"
                 android:orientation="horizontal">
 
