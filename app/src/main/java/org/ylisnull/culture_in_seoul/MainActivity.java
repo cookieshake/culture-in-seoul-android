@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         //메뉴 지시기 추가
         UnderlinePageIndicator pager_indicator = (UnderlinePageIndicator) findViewById(R.id.pager_indicator);
         pager_indicator.setViewPager(viewPager);
-        pager_indicator.setSelectedColor(Color.parseColor("#e14018"));
+        pager_indicator.setSelectedColor(Color.parseColor("#e64a19"));
         pager_indicator.setFades(false);
 
 
