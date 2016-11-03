@@ -93,47 +93,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- 하단메뉴 부분, 스크롤 되는 부분이 상단과 겹치지 않게 함 -->
-        <FrameLayout
-            android:id="@+id/card_bottomMenuBackground"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@android:color/transparent"
-            android:visibility="gone">
-
-            <LinearLayout
-                android:id="@+id/card_bottomMenu"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:textColor="#fff"
-                    android:gravity="center"
-                    android:background="#fe5722"
-                    android:text="상세보기" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="#fff" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="match_parent"
-                    android:textColor="#fff"
-                    android:gravity="center"
-                    android:background="#fe5722"
-                    android:text="찜하기" />
-
-            </LinearLayout>
-        </FrameLayout>
 
     </LinearLayout>
 

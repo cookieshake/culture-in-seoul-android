@@ -36,7 +36,6 @@ public class CardViewHolder extends RecyclerView.ViewHolder {
 
         vMain_image = (ImageView) v.findViewById(R.id.card_image);
 
-        vBottomMenuBackground = (FrameLayout) v.findViewById(R.id.card_bottomMenuBackground);
-        vBottomMenu = (LinearLayout) v.findViewById(R.id.card_bottomMenu);
+
     }
 }

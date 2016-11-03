@@ -53,30 +53,6 @@ public class CardListViewAdapter extends RecyclerView.Adapter<CardViewHolder> {
         main_img = main_img.substring(0, main_img.lastIndexOf(".")).toLowerCase() + main_img.substring(main_img.lastIndexOf("."));
         Picasso.with(this.context).load(main_img).error(R.drawable.noimage).fit().centerInside().into(cardViewHolder.vMain_image);
 
-        //카드 왼쪽 클릭 시 하단 메뉴 생성
-        cardViewHolder.vCardContent.setClickable(true);
-        cardViewHolder.vCardContent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int visibility = cardViewHolder.vBottomMenuBackground.getVisibility();
-                if (visibility == View.GONE) {
-                    cardViewHolder.vBottomMenuBackground.setVisibility(View.VISIBLE);
-                    Animation slideDown = AnimationUtils.loadAnimation(context, R.anim.slide_down);
-                    cardViewHolder.vBottomMenu.startAnimation(slideDown);
-                } else {
-                    Animation slideUp = AnimationUtils.loadAnimation(context, R.anim.slide_up);
-                    cardViewHolder.vBottomMenu.startAnimation(slideUp);
-                    cardViewHolder.vBottomMenuBackground.postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            cardViewHolder.vBottomMenuBackground.setVisibility(View.GONE);
-                        }
-                    }, 200);
-                }
-
-            }
-        });
-
     }
 
     @Override
